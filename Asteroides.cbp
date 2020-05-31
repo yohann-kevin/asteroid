@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Asteroides" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Asteroides" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wnon-virtual-dtor" />
+					<Add option="-Wshadow" />
+					<Add option="-Winit-self" />
+					<Add option="-Wredundant-decls" />
+					<Add option="-Wcast-align" />
+					<Add option="-Wundef" />
+					<Add option="-Wfloat-equal" />
+					<Add option="-Winline" />
+					<Add option="-Wunreachable-code" />
+					<Add option="-Wmissing-declarations" />
+					<Add option="-Wmissing-include-dirs" />
+					<Add option="-Wswitch-enum" />
+					<Add option="-Wswitch-default" />
+					<Add option="-Weffc++" />
+					<Add option="-Wzero-as-null-pointer-constant" />
+					<Add option="-Wmain" />
+					<Add option="-pedantic" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-std=c++17" />
+					<Add option="-g" />
+					<Add directory="include/" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Asteroides" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++17" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Linker>
+			<Add option="-lsfml-graphics" />
+			<Add option="-lsfml-window" />
+			<Add option="-lsfml-system" />
+			<Add option="-lsfml-audio" />
+			<Add option="-no-pie" />
+		</Linker>
+		<Unit filename="include/Asteroide.h" />
+		<Unit filename="include/Coordonnees.h" />
+		<Unit filename="include/ElementEspace.h" />
+		<Unit filename="include/Espace.h" />
+		<Unit filename="include/ExceptionRessourceIntrouvable.h" />
+		<Unit filename="include/Explosion.h" />
+		<Unit filename="include/GestionnaireRessources.h" />
+		<Unit filename="include/Jeu.h" />
+		<Unit filename="include/Missile.h" />
+		<Unit filename="include/Vaisseau.h" />
+		<Unit filename="include/Vecteur.h" />
+		<Unit filename="include/font.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Asteroide.cpp" />
+		<Unit filename="src/Coordonnees.cpp" />
+		<Unit filename="src/ElementEspace.cpp" />
+		<Unit filename="src/Espace.cpp" />
+		<Unit filename="src/ExceptionRessourceIntrouvable.cpp" />
+		<Unit filename="src/Explosion.cpp" />
+		<Unit filename="src/GestionnaireRessources.cpp" />
+		<Unit filename="src/Jeu.cpp" />
+		<Unit filename="src/Missile.cpp" />
+		<Unit filename="src/Vaisseau.cpp" />
+		<Unit filename="src/Vecteur.cpp" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
